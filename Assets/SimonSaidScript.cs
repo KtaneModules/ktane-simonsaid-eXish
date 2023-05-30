@@ -362,6 +362,7 @@ public class SimonSaidScript : MonoBehaviour {
 
     IEnumerator TwitchHandleForcedSolve()
     {
+        while (!activated) yield return true;
         int ct = 7 - correctBtnPresses.Count;
         for (int i = 0; i < ct; i++)
         {
