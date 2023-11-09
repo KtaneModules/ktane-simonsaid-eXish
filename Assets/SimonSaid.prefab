@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 114341921314465956}
   - component: {fileID: 114137747078870040}
   - component: {fileID: 114017367703905494}
+  - component: {fileID: 114512103754957630}
   m_Layer: 0
   m_Name: SimonSaid
   m_TagString: Untagged
@@ -1052,6 +1053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 114335410585506892}
+  ruleSeed: {fileID: 114512103754957630}
   bomb: {fileID: 114375059033245494}
   colorblind: {fileID: 114341921314465956}
   buttons:
@@ -1339,6 +1341,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HighlightScale: {x: 1, y: 1, z: 1}
   OutlineAmount: 0
+--- !u!114 &114512103754957630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371807027823920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf69c2de51bd3c43bbd9bc22578ee08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seed: 1
 --- !u!114 &114523064962472894
 MonoBehaviour:
   m_ObjectHideFlags: 1
