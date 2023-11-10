@@ -216,10 +216,10 @@ public class SimonSaidScript : MonoBehaviour {
             }
         }
     }
+
     void GenerateStageWithRuleSeed(int stage)
     {
         var colorFlashed = btnColors[flashingBtn];
-
         var obtainedInstruction = encodedInstsAll[stage][colorFlashed];
         var obtainedOffset = offsetPosPressesAll[stage][colorFlashed];
         var targetPos = -1;
@@ -253,7 +253,7 @@ public class SimonSaidScript : MonoBehaviour {
         switch (obtainedOffset)
         {
             case OffsetType.None:
-                Debug.LogFormat("[Simon Said #{0}] Rule for this stage is to press the {1}", moduleId, debugString);
+                Debug.LogFormat("[Simon Said #{0}] Rule for this stage is to press the {1}.", moduleId, debugString);
                 break;
             case OffsetType.Opposite:
                 Debug.LogFormat("[Simon Said #{0}] Rule for this stage is to press the button opposite from the {1}.", moduleId, debugString);
@@ -268,12 +268,11 @@ public class SimonSaidScript : MonoBehaviour {
         Debug.LogFormat("[Simon Said #{0}] Correct button: {1}", moduleId, colorNames[btnColors[correctBtnPresses.Last()]]);
         Debug.LogFormat("[Simon Said #{0}] Expected sequence: {1}", moduleId, correctBtnPresses.Select(a => colorNames[btnColors[a]]).Join(", "));
     }
+
     void GenerateStage(int stage)
-    {
-        
+    { 
         Debug.LogFormat("[Simon Said #{0}] ==== STAGE {1} ====", moduleId, stage + 1);
         flashingBtn = UnityEngine.Random.Range(0, 4);
-        //flashingBtn = btnColors.IndexOf(0); // Debug purposes
         if (activated)
             flashStage = StartCoroutine(HandleStageFlash());
         Debug.LogFormat("[Simon Said #{0}] Flashing color: {1}", moduleId, colorNames[btnColors[flashingBtn]]);
