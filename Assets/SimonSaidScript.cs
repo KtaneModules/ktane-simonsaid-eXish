@@ -108,7 +108,6 @@ public class SimonSaidScript : MonoBehaviour {
                         newString += pickedChr;
                     }
                     curEncodedInst[y] = newString;
-                    //Debug.LogFormat("<Simon Said #{0}> {1}", moduleId, curEncodedInst[y]);
                 }
                 encodedInstsAll[x] = curEncodedInst;
                 offsetPosPressesAll[x] = curOffsetInst;
