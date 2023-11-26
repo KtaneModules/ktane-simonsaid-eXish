@@ -23,13 +23,13 @@ MonoBehaviour:
     PDF: https://ktane.timwi.de/PDF/Simon%20Said.pdf
 
 
-    Simon Said (simonSaidModule) v1.0.4
+    Simon Said (simonSaidModule) v1.0.5
 
     Module Idea by McNiko67 (R.I.P.)
 
     Implemented by eXish
 
     Twitch Plays and Rule Seed supported'
-  version: 1.0.4
+  version: 1.0.5
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 973ab5b8f6f8dcc4494b195ccdef7266, type: 3}
